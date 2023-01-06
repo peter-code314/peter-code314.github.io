@@ -7,16 +7,21 @@
             body {
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 50px;
-                background-image: url("https://static.vecteezy.com/system/resources/previews/003/206/772/original/hand-drawn-seamless-pattern-of-colorful-lizards-free-vector.jpg");
+                background-color: rgb(33, 31, 31);
             }
-            h1 {
+            .h {
                 font-family: Georgia, serif;
                 background-color: rgb(56, 125, 35);
                 color: rgb(255, 248, 220);
             }
-            p {
+            .text {
                 font-size: 1.25em;
                 font-family: "Comic Sans MS";
+                background-color: rgba(53, 31, 4, 0.764);
+                color: rgb(186, 190, 229);
+            }
+            .list {
+                font-family: "Monotype Corsiva", "Lucida Calligraphy";
                 background-color: rgba(53, 31, 4, 0.764);
                 color: rgb(186, 190, 229);
             }
@@ -26,31 +31,40 @@
             a {
                 font-style: italic;
                 font-weight: 550;
-                color: rgb(20, 20, 131);
+                color: rgb(165, 165, 255);
             }
         </style>
     </head>
     <body>
+
         <h1>Contents</h1>
-        <a href="#Basic-info">Basic info</a>
-        <a href="#hobby">Hobbys</a>
-        <a href="#ProgLang">Programme languages I use</a>
+        <a href="#Basic-info">Basic info<br></a>
+        <a href="#hobby">Hobbys<br></a>
+        <a href="#ProgLang">Programme languages I use<br></a>
+
+
         <h1 id="Basic-info">Basic info</h1>
-        <p>Hi guys. My name's Peter. I'm 11 years old now. I live in <em>Shanghai, China</em>.</p>
+        <p class="text">Hi guys. My name's Peter. I'm 11 years old now. I live in <em>Shanghai, China</em>.</p>
+
         <h1 id="hobbys">Hobbys</h1>
-        <p>Chess. I play on <a target="_blank" href="https://www.chess.com">chess.com</a> and <a href="https://www.lichess.org">lichess.org</a><br></p>
-        <ul>
+        <p class="text">Chess. I play on <a target="_blank" href="https://www.chess.com">chess.com</a> and <a href="https://www.lichess.org">lichess.org</a><br></p>
+        <ul class="text">
             <li>chess.com account: <a target="_blank" href="https://www.chess.com/member/petercheckm">petercheckm</a></li>
             <li>lichess.org account: <a target="_blank" href="https://lichess.org/@/peter132132">peter132132</a></li>
         </ul>
-        <h1 id="ProgLang">Programme languages I use</h1>
-        <h2>Already learnt</h2>
-        <ol>
+
+        <h1 id="ProgLang" class="h">Programme languages I use</h1>
+        <h2 class="h">Learnt</h2>
+        <ol class="list">
             <li>C++</li>
-            <li>Python</li>
+            <li class="list">Python</li>
         </ol>
-        <h2>Learning</h2>
-        <
-        <li>Java</li>
+        <h2 class="h">Learning</h2>
+        <ol class="text">
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
     </body>
 </html>
