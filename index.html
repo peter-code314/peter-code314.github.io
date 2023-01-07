@@ -5,66 +5,97 @@
         <title>Businesses card(English)</title>
         <style>
             body {
-                font-family: Arial, Helvetica, sans-serif;
                 font-size: 50px;
-                background-color: rgb(33, 31, 31);
+                background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                url("https://cdn.pixabay.com/photo/2017/07/07/02/49/green-2480256_1280.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
-            .h {
+            h1, h2 {
                 font-family: Georgia, serif;
-                background-color: rgb(56, 125, 35);
+                background-image: linear-gradient(100deg, rgb(0, 255, 102), 10%, rgb(195, 204, 37)),
+                linear-gradient(to bottom, rgba(233, 23, 23, 0.3), rgba(20, 45, 185, 0.3));
                 color: rgb(255, 248, 220);
             }
-            .text {
+            p {
                 font-size: 1.25em;
                 font-family: "Comic Sans MS";
                 background-color: rgba(53, 31, 4, 0.764);
-                color: rgb(186, 190, 229);
+                color: rgb(238, 239, 246);
             }
-            .list {
+            ol, ul {
                 font-family: "Monotype Corsiva", "Lucida Calligraphy";
                 background-color: rgba(53, 31, 4, 0.764);
-                color: rgb(186, 190, 229);
+                color: rgba(201, 231, 233, 0.966);
             }
             em {
-                font-family: "Segoe Print";
+                font-family: "Segoe Print", "Forte";
             }
             a {
                 font-style: italic;
                 font-weight: 550;
                 color: rgb(165, 165, 255);
             }
+            .Contents {
+                font-family: "Papyrus", fantasy;
+                color: rgba(18, 17, 17, 0.824);
+                list-style-type: none;
+                width: auto;
+            }
+            .Contents li a {
+                display: block;
+            }
         </style>
     </head>
     <body>
-
+        
         <h1>Contents</h1>
-        <a href="#Basic-info">Basic info<br></a>
-        <a href="#hobby">Hobbys<br></a>
-        <a href="#ProgLang">Programme languages I use<br></a>
+        <ul class="Contents">
+            <li><a href="#Basic-info">Basic info<br></a></li>
+            <li><a href="#hobby">Hobbys<br></a></li>
+            <li><a href="#ProgLang">Programme languages I use<br></a></li>
+            <li><a href="#My-idols">My idols<br></a></li>
+            <li><a href="#My-Soc-Acc">My Social Accounts<br></a></li>
+        </ul>
 
 
         <h1 id="Basic-info">Basic info</h1>
-        <p class="text">Hi guys. My name's Peter. I'm 11 years old now. I live in <em>Shanghai, China</em>.</p>
+        <p>Hi guys. My name's Peter. I'm 11 years old now. I live in <em>Shanghai, China</em>.</p>
 
         <h1 id="hobbys">Hobbys</h1>
-        <p class="text">Chess. I play on <a target="_blank" href="https://www.chess.com">chess.com</a> and <a href="https://www.lichess.org">lichess.org</a><br></p>
-        <ul class="text">
+        <h2>Chess</h2>
+        <p>I play on <a target="_blank" href="https://www.chess.com">chess.com</a> and <a href="https://www.lichess.org">lichess.org</a><br></p>
+        <ul>
             <li>chess.com account: <a target="_blank" href="https://www.chess.com/member/petercheckm">petercheckm</a></li>
             <li>lichess.org account: <a target="_blank" href="https://lichess.org/@/peter132132">peter132132</a></li>
         </ul>
 
-        <h1 id="ProgLang" class="h">Programme languages I use</h1>
-        <h2 class="h">Learnt</h2>
-        <ol class="list">
+        <h1 id="ProgLang">Programme languages I use</h1>
+        <h2>Learnt</h2>
+        <ol>
             <li>C++</li>
-            <li class="list">Python</li>
+            <li>Python</li>
         </ol>
-        <h2 class="h">Learning</h2>
-        <ol class="text">
+        <h2>Learning</h2>
+        <ol>
             <li>Java</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
         </ol>
+
+        <h1 id="My-idols">My idols</h1>
+        <p>Fan of:<br></p>
+        <ul>
+            <li><a href="https://www.youtube.com/@dream">Dream(Minecraft streamer)</a></li>
+            <li><a href="https://www.youtube.com/@3blue1brown">3blue1brown(3b1b)<br></a><a href="https://www.3blue1brown.com/">3b1b website ← click here</a></li>
+            <li><a href="https://www.youtube.com/@GothamChess">GothamChess</a></li>
+        </ul>
+
+        <h1 id="My-Soc-Acc">My Social Accounts</h1>
+        <ul>
+            <li>facebook account: <a href="https://www.facebook.com/profile.php?id=100089116842356"></a></li>
+        </ul>
     </body>
 </html>
