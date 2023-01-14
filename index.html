@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Businesses card(English)</title>
+        <title>About me</title>
         <style>
             body {
                 font-size: 50px;
@@ -11,6 +11,8 @@
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 background-size: cover;
+                position: relative;
+                left: 10px;
             }
             h1, h2 {
                 font-family: Georgia, serif;
@@ -35,16 +37,26 @@
             a {
                 font-style: italic;
                 font-weight: 550;
-                color: rgb(165, 165, 255);
             }
             .Contents {
                 font-family: "Papyrus", fantasy;
-                color: rgba(18, 17, 17, 0.824);
+                color: rgba(48, 42, 42, 0.824);
+                border: 10px dotted rgba(201, 231, 233, 0.966);
                 list-style-type: none;
-                width: auto;
             }
-            .Contents li a {
-                display: block;
+            .Contents a {
+                display:ruby-text;
+            }
+            .Contents a:any-link {
+                color: rgb(127, 255, 212);
+            }
+            
+            ul.Contents li::before {
+                content: "\2023";
+                color: rgba(255, 191, 0, 0.859);
+                font-weight: bold;
+                display: inline-block;
+                width: 1.01em;
             }
         </style>
     </head>
@@ -61,7 +73,7 @@
 
 
         <h1 id="Basic-info">Basic info</h1>
-        <p>Hi guys. My name's Peter. I'm 11 years old now. I live in <em>Shanghai, China</em>.</p>
+        <p>Hi guys. My name's Peter. I live in <em>Shanghai, China</em>.</p>
 
         <h1 id="hobbys">Hobbys</h1>
         <h2>Chess</h2>
@@ -88,9 +100,9 @@
         <h1 id="My-idols">My idols</h1>
         <p>Fan of:<br></p>
         <ul>
-            <li><a href="https://www.youtube.com/@dream">Dream(Minecraft streamer)</a></li>
-            <li><a href="https://www.youtube.com/@3blue1brown">3blue1brown(3b1b)<br></a><a href="https://www.3blue1brown.com/">3b1b website ← click here</a></li>
-            <li><a href="https://www.youtube.com/@GothamChess">GothamChess</a></li>
+            <li><a href="https://www.youtube.com/@dream" style="color: rgba(20, 239, 20, 0.766);">Dream(Minecraft streamer)</a></li>
+            <li><a href="https://www.youtube.com/@3blue1brown" style="color: rgba(201, 231, 233, 0.966); background-image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/3B1B_Logo.svg/1200px-3B1B_Logo.svg.png';">3blue1brown(3b1b)<br></a><a href="https://www.3blue1brown.com/">3b1b website ← click here</a></li>
+            <li><a href="https://www.youtube.com/@GothamChess" id="GC">GothamChess</a></li>
         </ul>
 
         <h1 id="My-Soc-Acc">My Social Accounts</h1>
