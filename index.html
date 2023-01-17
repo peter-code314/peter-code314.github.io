@@ -27,7 +27,7 @@
                 color: rgb(238, 239, 246);
             }
             ol, ul {
-                font-family: "Monotype Corsiva", "Lucida Calligraphy";
+                font-family: "Monotype Corsiva", "Lucida Calligraphy", cursive;
                 background-color: rgba(53, 31, 4, 0.764);
                 color: rgba(201, 231, 233, 0.966);
             }
@@ -37,6 +37,7 @@
             a {
                 font-style: italic;
                 font-weight: 550;
+                color: rgb(79, 173, 255);
             }
             .Contents {
                 font-family: "Papyrus", fantasy;
@@ -45,19 +46,21 @@
                 list-style-type: none;
             }
             .Contents a {
-                margin: 10px;
                 border: 6px ridge rgb(255, 217, 0);
+                padding: 2px;
             }
             .Contents a:any-link {
                 color: rgb(127, 255, 212);
             }
             
+            ul.Contents {
+                line-height: 2.5em;
+            }
+
             ul.Contents li::before {
                 content: "\2023";
                 color: rgba(255, 191, 0, 0.859);
-                font-weight: bold;
                 display: inline-block;
-                width: 1.01em;
             }
         </style>
     </head>
